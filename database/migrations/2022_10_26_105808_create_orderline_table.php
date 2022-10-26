@@ -8,7 +8,7 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     * This will setup each fields within the join table orderline, according to each of their data types.
+     * This will setup each fields within the join table Orderline, according to each of their data types.
      * @author Ibrahim Ahmad <210029073@aston.ac.uk>
      * @return void
      */
