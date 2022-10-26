@@ -12,6 +12,7 @@ If you wish to make changes to the code, I would suggest switching to the develo
 - The main branch provides the code similar to develop but website is in "working" state.
 - The develop branch provides the code that is in "development" state, meaning there is potential risks for bugs, or crashes.
 - For Project Group 23, we will be using the develop branch, not main branch.
+- The skeleton should be avoided.
 
 ## About Laravel
 
