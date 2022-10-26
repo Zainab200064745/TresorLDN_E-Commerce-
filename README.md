@@ -8,7 +8,7 @@
 </p>
 
 ## Some Notice for this Branch
-If you wish to make changes to the code, I would suggest switching to the develop branch, and clone the repository to retrieve that branch.
+If you wish to make changes to the code, I would suggest **cloning**, or **pulling** from the repository, and switching to **develop** branch when using git.
 - The main branch provides the code similar to develop but website is in "working" state.
 - The develop branch provides the code that is in "development" state, meaning there is potential risks for bugs, or crashes.
 - For Project Group 23, we will be using the develop branch, not main branch.
