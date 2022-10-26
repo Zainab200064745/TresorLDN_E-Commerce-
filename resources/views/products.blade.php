@@ -21,5 +21,6 @@
         </style>
     </head>
     <body class="antialiased">
+        <h1>Products Page</h1>
     </body>
 </html>
