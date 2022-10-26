@@ -34,7 +34,11 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
-     *
+     * 
+     * @author Ibrahim Ahmad (210029073) <210029073@aston.ac.uk>
+     * Description:
+     * Need to remove this method during production at a future release, because not appropriate as this will drop all tables if
+     * exists.
      * @return void
      */
     public function down()
