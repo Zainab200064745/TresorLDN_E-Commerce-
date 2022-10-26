@@ -13,6 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
+        /**
+         * Developer: Ibrahim Ahmad (210029073)
+         * Description: This will create the fields for the customer table
+         * with its appropriate types.
+         */
         Schema::create('customers', function (Blueprint $table) {
             $table->id('customer_id');
             $table->string('customer_first_name', 31);
