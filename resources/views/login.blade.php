@@ -22,5 +22,20 @@
     </head>
     <body class="antialiased">
         <h1>Login Page</h1>
+        <form method="POST" action="{{ route('login') }}">
+            @csrf
+
+            <label for="email"></label>
+            <input id="email" type="email" class="form-control @error('email')
+                is-invalid
+            @enderror" name="email" value="{{old('email')}}" autocomplete="email" autofocus>
+
+            <label for="password"></label>
+            <input id="password" type="password" class="form-control @error('password')
+                is-invalid
+            @enderror" name="password" value="{{old('password')}}" autocomplete="current-password">
+
+            <button type="submit">Login</button>
+        </form>
     </body>
 </html>
