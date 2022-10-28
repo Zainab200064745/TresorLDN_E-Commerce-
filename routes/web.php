@@ -25,9 +25,9 @@ Route::get('home', function () {
     return view('home');
 });
 
-Route::get('login', function () {
-    return view('login');
-});
+Route::get('login', [App\Http\Controllers\ECommerceAuthController::class, 'loginPage'])->name('login');
+
+Route::post('login', [App\Http\Controllers\ECommerceAuthController::class, 'checkUserLogin'])->name('login');
 
 Route::get('product', function () {
     return view('product');
