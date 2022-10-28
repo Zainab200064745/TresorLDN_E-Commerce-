@@ -13,6 +13,7 @@ If you wish to make changes to the code, I would suggest **cloning**, or **pulli
 - The develop branch provides the code that is in "development" state, meaning there is potential risks for bugs, or crashes.
 - For Project Group 23, we will be using the develop branch, not main branch.
 - The skeleton branch should be avoided.
+- Tested Branch will be created soon.
 
 ## About Laravel
 
