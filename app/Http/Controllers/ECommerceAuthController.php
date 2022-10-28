@@ -47,10 +47,17 @@ class ECommerceAuthController extends Controller
         //get the users credentials
         $login = $request->only('email', 'password');
         
+        //validate user's credentials 
+        $request->validate(
+            [
+                "email" => "required",
+                "password" => "required"
+            ]);
+
         //we check if the user has logged in
         if(Auth::attempt($login)){
             //redirect to homepage
-            Auth::login($login[0]);
+            #Auth::login($login[0]);
             return redirect()->intended(returnHome())->withSuccess('You have signed in!');
         }
 
