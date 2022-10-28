@@ -14,7 +14,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('orderlines', function (Blueprint $table) {
+        Schema::create('orderline', function (Blueprint $table) {
             $table->id('orderline_ref_no')->nullable(false)->autoincrement();
             #$table->increments('orderline_ref_no');
             #$table->integer('order_ref_no');
