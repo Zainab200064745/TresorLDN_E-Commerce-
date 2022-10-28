@@ -22,14 +22,11 @@
     </head>
     <body class="antialiased">
         <h1>Login Page</h1>
-        <select>
-            @foreach ($customers as $value => $key) 
-                <option value="{{$key->customer_first_name}}">{{$key->customer_first_name}}</option>
-            @endforeach
-        </select>
         <form method="POST" action="{{ route('login') }}">
             @csrf
-            
+            <?php
+            use App\Http\Controllers\CustomerController;
+            ?>
             <div>
                 <div>
                     <label for="email">E-mail:</label>

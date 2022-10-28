@@ -4,12 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
 class Customer extends Model
 {
+    use Notifiable, HasApiTokens, HasFactory, SoftDeletes;
     /**
      * These are the follow attributes that can be fillable by the customer
      *
@@ -31,7 +32,7 @@ class Customer extends Model
      * as we do not want these details to be public
      * @author Ibrahim Ahmad <210029073@aston.ac.uk>
      */
-    private $hidden = [
+    protected $hidden = [
         'password'
     ];
 
@@ -39,16 +40,12 @@ class Customer extends Model
      * The table that we will be working with.
      * @author Ibrahim Ahmad <210029073@aston.ac.uk>
      */
-    protected $workingTable = 'customers';
+    protected $table = 'customers';
 
     /**
      * The primary key for the customer table
      * @author Ibrahim Ahmad <210029073@aston.ac.uk>
      */
-    protected $primary_key = 'customer_id';
+    protected $primaryKey = 'customer_id';
 
-    public function isActive() {
-        
-    }
-    use HasFactory;
 }
