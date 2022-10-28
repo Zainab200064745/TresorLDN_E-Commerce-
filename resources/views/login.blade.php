@@ -22,20 +22,31 @@
     </head>
     <body class="antialiased">
         <h1>Login Page</h1>
+        <select>
+            @foreach ($customers as $value => $key) 
+                <option value="{{$key->customer_first_name}}">{{$key->customer_first_name}}</option>
+            @endforeach
+        </select>
         <form method="POST" action="{{ route('login') }}">
             @csrf
+            
+            <div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" class="btn-outline-info form-control @error('email')
+                        is-invalid
+                    @enderror" name="email" value="{{old('email')}}" autocomplete="email" autofocus>
+                </div>
 
-            <label for="email"></label>
-            <input id="email" type="email" class="form-control @error('email')
-                is-invalid
-            @enderror" name="email" value="{{old('email')}}" autocomplete="email" autofocus>
+                <div>
+                    <label for="password">Password</label>
 
-            <label for="password"></label>
-            <input id="password" type="password" class="form-control @error('password')
-                is-invalid
-            @enderror" name="password" value="{{old('password')}}" autocomplete="current-password">
-
-            <button type="submit">Login</button>
+                    <input id="password" type="password" class="form-control @error('password')
+                        is-invalid
+                    @enderror" name="password" value="{{old('password')}}" autocomplete="current-password">
+                </div>
+                <button type="submit">Login</button>
+            </div>
         </form>
     </body>
 </html>
