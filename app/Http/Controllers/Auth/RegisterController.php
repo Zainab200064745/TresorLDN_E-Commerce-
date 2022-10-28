@@ -43,16 +43,23 @@ class RegisterController extends Controller
 
     /**
      * Get a validator for an incoming registration request.
-     *
+     * This will validate the user's inputs when registering the login details.
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
+     * @author Ibrahim Ahmad <210029073@aston.ac.uk>
      */
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'user_first_name' => ['required', 'string', 'max:31'],
+            'user_last_name' => ['required', 'string', 'max:31'],
+            'user_address_line_1' => ['required', 'string'],
+            'user_address_line_2' => ['required', 'string'],
+            'user_postcode' => ['required', 'string'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'user_status' => ['string', 'max:255'],
+            'isAdmin' => ['tinyint']
         ]);
     }
 
@@ -65,7 +72,11 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'user_first_name' => $data['user_first_name'],
+            'user_last_name' => $data['user_last_name'],
+            'user_address_line_1' => $data['user_address_line_1'],
+            'user_address_line_2' => $data['user_address_line_2'],
+            'user_postcode' => $data['user_postcode'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
