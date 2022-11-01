@@ -43,10 +43,20 @@ Thank you for considering contributing to TresorLDN's Webiste! The contribution 
 
 In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+## Software Related Bugs
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Ibrahim Ahmad via [210029073@aston.ac.uk](mailto:210029073@aston.ac.uk). All security vulnerabilities will be promptly addressed.
+If you discover any issues regarding software bugs, please send an e-mail to Ibrahim Ahmad via [210029073@aston.ac.uk](mailto:210029073@aston.ac.uk). All security vulnerabilities will be promptly addressed.
 
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Contributors
+
+- **Ibrahim Ahmad** (210029073) - Main Contributor to the TresorLDN E-Commerce website, and is a server-sided developer. His Contact details are [210029073@aston.ac.uk](mailto:210029073@aston.ac.uk)
+- **Humera Muhammad** (200060828) - Researcher and Client-side developer to the TresorLDN E-Commerce website. Her Contact details are [200060828@aston.ac.uk](mailto:200060828@aston.ac.uk)
+- **Ben Squelch** (210052484) - Server-side developer to the TresorLDN E-Commerce website. His Contact details are [210052484@aston.ac.uk](mailto:210052484@aston.ac.uk)
+- **Thomas Merricks** (180204511) - Server-side developer to the TresorLDN E-Commerce website. His Contact details are [180204511@aston.ac.uk](mailto:180204511@aston.ac.uk)
+- **Boluwatife Akinola** (210119226) - Server-side developer to the TresorLDN E-Commerce website. His Contact details are [210119226@aston.ac.uk](mailto:210119226@aston.ac.uk)
+- **Anaami Patel** (220197368) - UI & UX Website Designer using Wireframe. Her Contact details are [220197368@aston.ac.uk](mailto:220197368@aston.ac.uk)
+- **Faryal Mansoor** (220254155) - Website Designer and Client-side developer. Her Contact details are [220254155@aston.ac.uk](mailto:220254155@aston.ac.uk)
